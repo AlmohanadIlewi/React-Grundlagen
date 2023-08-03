@@ -39,7 +39,7 @@
 */
 
 .App {
-  max-width: 400px;
+  max-width: 200px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -50,9 +50,10 @@ h1 {
 }
 
 input[type='text'] {
-  width: 100%;
+  width: 20%;
   padding: 8px;
   font-size: 16px;
+  
 }
 
 button {
@@ -63,6 +64,7 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+
 }
 
 ul {
@@ -83,4 +85,19 @@ span {
 
 .completed {
   text-decoration: line-through;
+} 
+
+
+/*ul {
+  list-style-type: none;
 }
+
+.done {
+  text-decoration: line-through;
+}
+
+body {
+  color: orange;
+  
+} 
+*/

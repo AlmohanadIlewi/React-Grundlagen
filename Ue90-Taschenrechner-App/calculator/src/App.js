@@ -16,6 +16,8 @@ const backspace = () => {
     setResult(result.slice(0, result.length - 1));
 };
 
+
+
 const calculate = () => {
     try {
         const evaluatedResult = eval(result);

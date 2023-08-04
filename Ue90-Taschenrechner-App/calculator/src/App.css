@@ -1,34 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
 
-
-*{
-    font-family: 'Robot', sans-serif;
-    font-size: 20px;
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 body {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-
+  background-color: #38393d;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 256px;
-    text-align: center;
-    border: 10px solid #101116;
-    background: #101116;
-    border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid #101116;
+  background: #101116;
+  border-radius: 5px;
 }
+
 
 .keypad {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    
+    grid-gap: 0,4rem;
+  }
+
+input[type='text'] {
+  height: 75px;
+  width: 249px;
+  background-color: silver;
+  border: 0px;
+  color: black;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
+
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #262834;
+}
+#result {
+  grid-column: 4/5;
+  grid-row: 5;
+  color: #262834;
+}
+
+#backspace {
+  color: #342826;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(122, 112, 112);
+  color: black;
+  font-weight: 500;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+outline: none;
+}
+
+
+button[name='0'],
+button[name='1'],
+button[name='2'],
+button[name='3'],
+button[name='4'],
+button[name='5'],
+button[name='6'],
+button[name='7'],
+button[name='8'],
+button[name='9'] {
+  color: black;
+}
+
+
+.highlight {
+  background: rgb(89, 62, 241);
+}
+
+button:hover {
+    background-color: maroon;
+  }
+  .orange {
+    background-color: orange;
+  }
+
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #262834;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  text-align: center;
+  border: 2px solid #101116;
+  background: #101116;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+input[type='text'] {
+  height: 75px;
+  width: 100%;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#clear {
+  grid-column: span 2;
+  background-color: #ff4136;
+}
+
+#result {
+  background-color: #2ecc40;
+}
+
+#backspace {
+  background-color: #ff851b;
+}
+
+*/
